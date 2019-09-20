@@ -1,6 +1,6 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text, Block, Image } from '@tarojs/components'
-import Single from '../../Compoennt/c_news_single/c_news_single'
+import Single from '../../component/c_news_single/c_news_single'
 import './Page_Detail.scss'
 
 export default class Page_Detail extends Component {

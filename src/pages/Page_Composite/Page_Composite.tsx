@@ -7,7 +7,7 @@ const videoContext = Taro.createAudioContext('video');
 export default class Page_Composite extends Component {
     config: Config = {
         navigationBarTitleText: '视图新闻',
-        navigationBarTitleStyle: 'black'
+        navigationBarTextStyle: 'black'
     }
 
     constructor() {

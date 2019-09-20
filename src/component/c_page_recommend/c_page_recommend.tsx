@@ -2,7 +2,7 @@ import Taro, { Component } from '@tarojs/taro'
 import { View, Text, Image, Swiper, Block, SwiperItem } from '@tarojs/components'
 import Items from '../c_news_items/c_news_items'
 import Single from '../c_news_single/c_news_single'
-import './c_news_recommend.scss'
+import './c_page_recommend.scss'
 
 export default class Recommend extends Component {
     constructor() {
@@ -32,7 +32,7 @@ export default class Recommend extends Component {
                 footword: "不执着财经",
                 footsource: "2小时前"
             }, {
-                url: "https://www.huawei.com",
+                url: "/pages/Page_Image/Page_Image",
                 title: "纯html新闻详情页面。华为官网",
                 imgsrc: "../../asset/to_delete/picture6.png",
                 footword: "华为",

@@ -1,13 +1,13 @@
 import Taro, { Component, Config } from '@tarojs/taro'
 import { View, Text, Block, Swiper, SwiperItem } from '@tarojs/components'
-import Single from '../../Compoennt/c_search_bar/c_search_bar'
-import Recommend from '../../Compoennt/c_page_recommend/c_page_recommend'
+import SearchBar from '../../component/c_search_bar/c_search_bar'
+import Recommend from '../../component/c_page_recommend/c_page_recommend'
 import './Page_Home.scss'
 
 export default class Page_Home extends Component {
     config: Config = {
         navigationBarTitleText: '新闻',
-        navigationBarTitleStyle: 'black'
+        navigationBarTextStyle: 'black'
     }
 
     constructor() {
@@ -44,7 +44,7 @@ export default class Page_Home extends Component {
                 <View className="search_view">
                     <SearchBar url="/pages/Page_Search/Page_Search" placeholder={placeholder}></SearchBar>
                 </View>
-                <View className="swiper_item">
+                <View className="swiper_tab">
                     {
                         tabs.map(($item, index) => {
                             return (

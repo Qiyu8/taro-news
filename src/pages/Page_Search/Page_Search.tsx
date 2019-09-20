@@ -8,7 +8,7 @@ import './Page_Search.scss'
 export default class Page_Search extends Component {
     config: Config = {
         navigationBarTitleText: '搜索',
-        navigationBarTitleStyle: 'Black'
+        navigationBarTextStyle: 'black'
     }
 
     constructor() {
@@ -36,7 +36,7 @@ export default class Page_Search extends Component {
     }
 
     clearHis() {
-        this,state.rslist = []
+        this, state.rslist = []
     }
 
     changeInputValue(evt) {
@@ -48,54 +48,56 @@ export default class Page_Search extends Component {
     }
 
     render() {
-        const { inputvalue, title, clear, rslint, searchImg, items, singles} = this.state
+        const { inputvalue, title, clear, rslint, searchImg, items, singles } = this.state
         return (
             <View className="container">
                 <SearchTitle></SearchTitle>
                 {
-                    inputvalue==''? (
+                    inputvalue == '' ? (
                         <View className="his_div">
                             <View className="his_div_head">
                                 <Text className="search_his">{title}</Text>
-                                <Text className="search_clear" onClick={this.clearHis}>{title}</Text>
+                                <Text className="search_clear" onClick={this.clearHis}>{clear}</Text>
                             </View>
                             {
                                 rslint.map((item) => {
-                                    <View>
-                                        <View className="search_rs" onClick={this.itemClick.bind(this, item)}>
-                                            <View className="rs_img">
-                                                <Image className="search_img" src={searchImg}></Image>
-                                            </View>
-                                            <View className="rs_content">
-                                                <Text className="rs_content_text">{item}</Text>
+                                    return (
+                                        <View>
+                                            <View className="search_rs" onClick={this.itemClick.bind(this, item)}>
+                                                <View className="rs_img">
+                                                    <Image className="search_img" src={searchImg}></Image>
+                                                </View>
+                                                <View className="rs_content">
+                                                    <Text className="rs_content_text">{item}</Text>
+                                                </View>
                                             </View>
                                         </View>
-                                    </View>
-                                })
-                            }
-                        </View>
-                    ):(
-                        <View className="rs_div">
-                            {
-                                items.map(item => {
-                                    return (
-                                        <Block>
-                                            <Items url={item.url} title={item.title} imglist={item.imglist} footword={item.footword} footsource={item.footsource}></Items>
-                                        </Block>
-                                    )
-                                })
-                            }
-                            {
-                                singles.map(item => {
-                                    return (
-                                        <Block>
-                                            <Single url={item.url} title={item.title} imgsrc={item.imgsrc} footword={item.footword} footsource={item.footsource}></Single>
-                                        </Block>
                                     )
                                 })
                             }
                         </View>
-                    )
+                    ) : (
+                            <View className="rs_div">
+                                {
+                                    items.map(item => {
+                                        return (
+                                            <Block>
+                                                <Items url={item.url} title={item.title} imglist={item.imglist} footword={item.footword} footsource={item.footsource}></Items>
+                                            </Block>
+                                        )
+                                    })
+                                }
+                                {
+                                    singles.map(item => {
+                                        return (
+                                            <Block>
+                                                <Single url={item.url} title={item.title} imgsrc={item.imgsrc} footword={item.footword} footsource={item.footsource}></Single>
+                                            </Block>
+                                        )
+                                    })
+                                }
+                            </View>
+                        )
                 }
             </View>
         )

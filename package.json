@@ -2,12 +2,12 @@
 	"name": "taro_news",
 	"version": "1.0.0",
 	"private": true,
-  "description": "news",
-  "templateInfo": {
-    "name": "default",
-    "typescript": true,
-    "css": "sass"
-  },
+	"description": "news",
+	"templateInfo": {
+		"name": "default",
+		"typescript": true,
+		"css": "sass"
+	},
 	"scripts": {
 		"build:weapp": "taro build --type weapp",
 		"build:swan": "taro build --type swan",
@@ -26,15 +26,17 @@
 	"license": "MIT",
 	"dependencies": {
 		"@tarojs/components": "1.3.17",
-    "@tarojs/components-qa": "1.3.17",
-		"@tarojs/taro":  "1.3.17",
+		"@tarojs/components-qa": "1.3.17",
+		"@tarojs/taro": "1.3.17",
+		"@tarojs/router": "1.3.17",
 		"@tarojs/taro-alipay": "1.3.17",
 		"@tarojs/taro-h5": "1.3.17",
 		"@tarojs/taro-swan": "1.3.17",
 		"@tarojs/taro-tt": "1.3.17",
 		"@tarojs/taro-weapp": "1.3.17",
 		"@tarojs/taro-quickapp": "1.3.17",
-		"nervjs": "^1.4.0"
+		"nervjs": "^1.4.0",
+		"nerv-devtools": "^1.4.0"
 	},
 	"devDependencies": {
 		"@tarojs/plugin-babel": "1.3.17",
@@ -42,8 +44,8 @@
 		"@tarojs/plugin-sass": "1.3.17",
 		"@tarojs/plugin-uglifyjs": "1.3.17",
 		"@tarojs/webpack-runner": "1.3.17",
-		"@tarojs/react": "^16.4.6",
-		"@tarojs/webpack-env": "^1.13.6",
+		"@types/react": "^16.4.6",
+		"@types/webpack-env": "^1.13.6",
 		"@typescript-eslint/parser": "^1.6.0",
 		"babel-eslint": "^8.2.3",
 		"babel-plugin-transform-class-properties": "^6.24.1",
@@ -59,7 +61,7 @@
 		"eslint-plugin-taro": "1.3.17",
 		"stylelint": "9.3.0",
 		"stylelint-config-taro-rn": "1.3.17",
-		"style-taro-rn": "1.3.17",
+		"stylelint-taro-rn": "1.3.17",
 		"typescript": "^3.0.1"
 	}
 }

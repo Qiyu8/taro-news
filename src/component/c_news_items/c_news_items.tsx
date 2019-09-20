@@ -28,7 +28,7 @@ export default class Items extends Component {
                 </View>
                 <View className="three_items_foot">
                     <Text className="foot_font margin_right">{this.props.footword}</Text>
-                    <Text className="foot_font margin_color">{this.props.footsource}</Text>
+                    <Text className="foot_font font_color">{this.props.footsource}</Text>
                 </View>
             </View>
         )

@@ -5,7 +5,7 @@ import './Page_Image.scss'
 export default class Page_Image extends Component {
     config: Config = {
         navigationBarTitleText: '图片',
-        navigationBarTitleStyle: 'Black'
+        navigationBarTextStyle: 'black'
     }
 
     constructor() {

@@ -47,7 +47,7 @@ const config = {
             ]
           }
         },
-        pxtransfrom: {
+        pxtransform: {
           enable: true,
           config: {
 

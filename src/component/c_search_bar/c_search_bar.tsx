@@ -1,7 +1,7 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text, Image, Block } from '@tarojs/components'
 import search from '../../asset/c_search_search/search.png'
-import './c_news_bar.scss'
+import './c_search_bar.scss'
 
 export default class SearchBar extends Component {
     static defaultProps = {

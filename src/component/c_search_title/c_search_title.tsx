@@ -1,14 +1,12 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View, Text, Image, Block } from '@tarojs/components'
-import './c_news_title.scss'
+import { View, Image, Input } from '@tarojs/components'
+import './c_search_title.scss'
 
 export default class SearchTitle extends Component {
     constructor() {
         super(...arguments)
         this.state = {
-            inputvalue = {
-                inputvalue: ""
-            }
+            inputvalue: ""
         }
     }
 

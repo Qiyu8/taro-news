@@ -10,6 +10,7 @@ export default class Single extends Component {
     }
 
     render() {
+        const {url, title, footword, footsource, imgsrc} = this.props
         return (
             <View className="news_single" onClick={this.rediect.bind(this, url)}>
                 <View className="news_single_content">
