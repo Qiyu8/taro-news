@@ -1,0 +1,81 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+  }
+
+  .content {
+    display: flex;
+    width: 684px;
+    margin-left: 33px;
+    margin-right: 33px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .title {
+    margin-top: 33.3px;
+    width: 683px;
+  }
+
+  .title_text {
+    font-weight: bold;
+    font-size: 50px;
+    color: #1A1A1A;
+  }
+
+  .second_title {
+    width: 684px;
+    margin-top: 16.7px;
+  }
+
+  .second_title_text {
+    font-size: 27px;
+    color: #8c8c8c;
+    margin-right: 22px;
+  }
+
+  .first_program {
+    width: 684px;
+    margin-top: 33.3px;
+  }
+
+  .first_program_text {
+    color: #000000;
+    font-size: 35.4px;
+    line-height: 60.4px;
+  }
+
+  .img_stack {
+    align-items: center;
+    justify-content: center;
+    margin-top: 33.3px;
+  }
+
+  .img_main {
+    width: 683px;
+    height: 384px;
+  }
+
+  .second_program {
+    width: 683px;
+    margin-top: 32.7px;
+  }
+
+  .foot {
+    width: 387px;
+    margin-top: 16.7px;
+  }
+
+  .font_text {
+    color: #8c8c8c;
+    font-size: 27.1px;
+  }
+
+  .recommand {
+    margin-top: 79.3px;
+    margin-bottom: 67px;
+  }

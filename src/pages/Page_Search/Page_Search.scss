@@ -1,0 +1,86 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+  }
+
+  .title {
+    font-size: 100px;
+  }
+
+  .his_div {
+    display: flex;
+    width: 684px;
+    margin-top: 46.9px;
+    flex-direction: column;
+  }
+
+  .his_div_head {
+    display: flex;
+    width: 684px;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 11.1px;
+  }
+
+  .search_his {
+    font-size: 27.1px;
+    color: #7A7A7A;
+    font-weight: bold;
+  }
+
+  .search_clear {
+    color: #005BBA;
+    font-size: 27.1px;
+    font-weight: bold;
+  }
+
+  .search_rs {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+  }
+
+  .rs_img {
+    display: flex;
+    width: 50px;
+    height: 70px;
+    align-items: flex-start;
+    margin-right: 37px;
+  }
+
+  .rs_content {
+    display: flex;
+    width: 600px;
+    height: 73px;
+    border-bottom-width: 0.5px;
+    border-bottom-color: #BCBCBC;
+    flex-direction: column;
+  }
+
+  .search_img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .rs_content_text {
+    color: #1A1A1A;
+    font-size: 31.3px;
+    height: 40px;
+  }
+
+  .rs_div {
+    display: flex;
+    width: 684px;
+    flex-direction: column;
+    margin-top: 14.5px;
+  }
+
+  .line2 {
+    width: 684px;
+    height: 0.5px;
+    background-color: #BCBCBC;
+    margin-top: 23.9px;
+  }

@@ -1,0 +1,141 @@
+.richtext_container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+    background-color: #FFFFFF;
+  }
+  .loading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top:40px;
+    width:684px;
+  }
+
+  .main_content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+    width: 684px;
+    margin-left: 33px;
+    margin-right: 33px;
+    background-color: #FFFFFF;
+
+  }
+
+  .recommend {
+    display: flex;
+    width: 684px;
+    margin-top: 21.2px;
+    flex-direction: column;
+  }
+
+  .single_item_recommend {
+    width: 684px;
+    margin-bottom: 16px;
+  }
+
+  .single_item_recommend_text {
+    color: #8c8c8c;
+    font-size: 27.1px;
+  }
+
+  .recommend_text {
+    font-size: 31.3px;
+    color: #1A1A1A;
+    font-weight: bold;
+    margin-bottom: 32.7px;
+  }
+
+  .recommend_div {
+    display: flex;
+    width: 684px;
+    flex-direction: column;
+  }
+
+  .recommend1 {
+    display: flex;
+    width: 684px;
+    flex-direction: column;
+  }
+
+  .re_head {
+    display: flex;
+    width: 684px;
+    height: 84px;
+    align-items: flex-end;
+
+  }
+
+  .re_foot {
+    width: 684px;
+    margin-top: 20.8px;
+  }
+
+  .re_head_img {
+    width: 84px;
+    height: 84px;
+    border-radius: 42px;
+    background-color: rgb(229, 234, 234);
+  }
+
+  .name_time {
+    display: flex;
+    width: 387px;
+    margin-left: 33px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .name {
+    color: #1A1A1A;
+    font-size: 31.3px;
+  }
+
+  .time {
+    color: #BCBCBC;
+    font-size: 20.8px;
+  }
+
+  .zan {
+    display: flex;
+    width: 104px;
+    height: 54px;
+    border: 2px solid #BCBCBC;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 72px;
+    border-radius: 8px;
+  }
+
+  .zan_img {
+    width: 33px;
+    height: 33px;
+    margin-left: 14px;
+  }
+
+  .zan_num {
+    color: #BCBCBC;
+    font-size: 20px;
+    margin-right: 17px;
+  }
+
+  .zan_text_div {
+    width: 684px;
+    padding-left: 114px;
+  }
+
+  .zan_text {
+    width: 570px;
+    line-height: 35px;
+    font-size: 30px;
+    color: #000000;
+    padding-bottom: 16.7px;
+    border-bottom-color: #BCBCBC;
+    border-bottom-width: 0.5px;
+    border-bottom-style: solid;
+    margin-bottom: 20px;
+  }
