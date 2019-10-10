@@ -18,6 +18,7 @@ export default class Page_Search extends Component {
             clear: "清空",
             inputvalue: "",
             rslist: ["贸易战", "特朗普", "演唱会", "金特会"],
+            searchImg: "../../asset/img/search_1.png",
             items: [{
                 url: "/Page_Hot",
                 title: "索尼A9大师说：开启专业摄影的微单时代获奖作品欣赏",
@@ -36,7 +37,7 @@ export default class Page_Search extends Component {
     }
 
     clearHis() {
-        this, state.rslist = []
+        this.state.rslist = []
     }
 
     changeInputValue(evt) {
@@ -48,7 +49,7 @@ export default class Page_Search extends Component {
     }
 
     render() {
-        const { inputvalue, title, clear, rslint, searchImg, items, singles } = this.state
+        const { inputvalue, title, clear, rslist, searchImg, items, singles } = this.state
         return (
             <View className="container">
                 <SearchTitle></SearchTitle>
@@ -60,7 +61,7 @@ export default class Page_Search extends Component {
                                 <Text className="search_clear" onClick={this.clearHis}>{clear}</Text>
                             </View>
                             {
-                                rslint.map((item) => {
+                                rslist.map((item) => {
                                     return (
                                         <View>
                                             <View className="search_rs" onClick={this.itemClick.bind(this, item)}>

@@ -3,6 +3,7 @@
     "name": "News",
     "versionName": "1.0.1",
     "versionCode": 1,
+    "icon": "/asset/logo.png",
     "minPlatformVersion": 1040,
     "features": [
         {

@@ -28,7 +28,7 @@ export default class Page_Home extends Component {
     }
 
     swichNav(index) {
-        Taro.toast({
+        Taro.showToast({
             title: index + '',
             duration: 1000
         })

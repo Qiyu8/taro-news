@@ -32,7 +32,7 @@ export default class SearchTitle extends Component {
             <View className="container">
                 <View className="search_bar_container">
                     <View className="image_search_back_div" onClick={this.back}>
-                        <Image className="iamge_search_back" src="../../asset/img/Slice2.png"></Image>
+                        <Image className="image_search_back" src="../../asset/img/Slice2.png"></Image>
                     </View>
                     <View className="search_div">
                         <View className="image_search_back_div_search" onClick={this.search}>

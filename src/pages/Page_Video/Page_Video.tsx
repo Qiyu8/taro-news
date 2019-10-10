@@ -5,6 +5,11 @@ import './Page_Video.scss'
 const videoContext = Taro.createAudioContext('video')
 
 export default class Page_Video extends Component {
+    config: Config = {
+        navigationBarTitleText: '视频',
+        navigationBarTextStyle: 'black'
+    }
+
     constructor() {
         super(...arguments)
         this.state = {
@@ -16,11 +21,11 @@ export default class Page_Video extends Component {
             recommend: "推荐观看",
             videoIndex: 0,
             videoSource: "https://ss0.bdstatic.com/-0U0bnSm1A5BphGlnYG/cae-legoup-video-target/93be3d88-9fc2-4fbd-bd14-833bca731ca7.mp4",
-            poster: "./to_delete/Bitmap.png",
+            poster: "../../asset/to_delete/Bitmap.png",
             news: [
-                { directUrl: "/Page_Video", url: 'https://ss0.bdstatic.com/-0U0bnSm1A5BphGlnYG/cae-legoup-video-target/93be3d88-9fc2-4fbd-bd14-833bca731ca7.mp4', title: "湖下冰岛北极光照片宛若仙境", from: "第三方媒体", img: "./to_delete/1.png", time: "05:20", poster: "./to_delete/1.png" },
-                { directUrl: "/Page_Video", url: 'https://ss0.bdstatic.com/-0U0bnSm1A5BphGlnYG/cae-legoup-video-target/93be3d88-9fc2-4fbd-bd14-833bca731ca7.mp4', title: "安第斯山脉：带你去隐秘之境", from: "第三方媒体", img: "./to_delete/2.png", time: "05:20", poster: "./to_delete/2.png" },
-                { directUrl: "/Page_Video", url: 'https://ss0.bdstatic.com/-0U0bnSm1A5BphGlnYG/cae-legoup-video-target/93be3d88-9fc2-4fbd-bd14-833bca731ca7.mp4', title: "冰雪召唤：阿尔卑斯山脉下的滑雪少年", from: "第三方媒体", img: "./to_delete/2.png", time: "05:20", poster: "./to_delete/2.png" }
+                { directUrl: "/pages/Page_Video/Page_Video", url: 'https://ss0.bdstatic.com/-0U0bnSm1A5BphGlnYG/cae-legoup-video-target/93be3d88-9fc2-4fbd-bd14-833bca731ca7.mp4', title: "湖下冰岛北极光照片宛若仙境", from: "第三方媒体", img: "../../asset/to_delete/1.png", time: "05:20", poster: "../../asset/to_delete/1.png" },
+                { directUrl: "/pages/Page_Video/Page_Video", url: 'https://ss0.bdstatic.com/-0U0bnSm1A5BphGlnYG/cae-legoup-video-target/93be3d88-9fc2-4fbd-bd14-833bca731ca7.mp4', title: "安第斯山脉：带你去隐秘之境", from: "第三方媒体", img: "../../asset/to_delete/2.png", time: "05:20", poster: "../../asset/to_delete/2.png" },
+                { directUrl: "/pages/Page_Video/Page_Video", url: 'https://ss0.bdstatic.com/-0U0bnSm1A5BphGlnYG/cae-legoup-video-target/93be3d88-9fc2-4fbd-bd14-833bca731ca7.mp4', title: "冰雪召唤：阿尔卑斯山脉下的滑雪少年", from: "第三方媒体", img: "../../asset/to_delete/2.png", time: "05:20", poster: "../../asset/to_delete/2.png" }
             ]
         }
     }

@@ -120,7 +120,7 @@ export default class Recommend extends Component {
                     singles.map(item => {
                         return (
                             <Block>
-                                <Single url={item.url} title={item.title} imglist={item.imgsrc} footword={item.footword} footsource={item.footsource}></Single>
+                                <Single url={item.url} title={item.title} imgsrc={item.imgsrc} footword={item.footword} footsource={item.footsource}></Single>
                             </Block>
                         )
                     })

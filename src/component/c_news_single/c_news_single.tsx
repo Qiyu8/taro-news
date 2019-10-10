@@ -22,9 +22,9 @@ export default class Single extends Component {
                             <Text className="foot_font margin_right">{footword}</Text>
                             <Text className="foot_font font_color">{footsource}</Text>
                         </View>
-                        <View className="news_single_img">
-                            <Image className="three_imgs" src={imgsrc}></Image>
-                        </View>
+                    </View>
+                    <View className="news_single_img">
+                        <Image className="three_imgs" src={imgsrc}></Image>
                     </View>
                 </View>
             </View>

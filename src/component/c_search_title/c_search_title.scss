@@ -4,7 +4,7 @@
     justify-content: center;
     align-content: center;
     align-items: center;
-    background-color: rgb(228, 165, 165);
+    background-color: #f2f2f2;
   }
 
   .title {
@@ -14,9 +14,8 @@
   .search_bar_container {
     display: flex;
     align-items: center;
-    width: 684px;
     height: 100px;
-    margin-left: 33px;
+    margin-left: 5px;
     margin-right: 33px;
   }
 
@@ -40,7 +39,14 @@
     width: 33px;
     height: 33px;
     margin-left: 17px;
+  }
 
+  .search_div {
+    display: flex;
+    background-color: #f2f2f2;
+    align-items: center;
+    border-radius: 8px;
+    height: 64px;
   }
 
   .image_search_back {
@@ -92,13 +98,6 @@
     width: 26px;
     height: 26px;
     margin-left: 29px;
-  }
-
-  .image_search_back_div {
-    width: 84px;
-    height: 100px;
-    align-items: center;
-    justify-content: center;
   }
 
   .image_search_result {

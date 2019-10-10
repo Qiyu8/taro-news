@@ -7,7 +7,12 @@
     background-color: #FFFFFF;
   }
 
-  .search_div {}
+  .swiper_tab {
+    width: 100%;
+    border-bottom: 2px solid #777777;
+    text-align: center;
+    line-height: 80px;
+  }
 
   .title {
     font-size: 100px;
@@ -37,19 +42,19 @@
   }
 
   .tab-bar {
-    margin-left: 33px;
-    margin-right: 33px;
-    margin-top: 29.7px;
-    width: 684px;
-    height: 52px;
+    margin-left: 30px;
+    width: 794px;
+    height: 1850px;
   }
 
   .tab-item {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    width: 100px;
-    margin-right: 17px;
+    margin-left: 17px;
+    border-bottom: 2px solid #777777;
+    display: inline-block;
+    width: 10%;
+    color: #000;
+    height: 80px;
   }
 
   .tab-item text {
@@ -69,4 +74,5 @@
     width: 684px;
     margin-left: 33px;
     margin-right: 33px;
+    height: 100%;
   }
