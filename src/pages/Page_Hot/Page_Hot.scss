@@ -74,6 +74,7 @@
   }
 
   .foot_lable {
+    display: flex;
     background-color: #f3f3f3;
     color: #1a1a1a;
     text-align: center;
@@ -82,6 +83,7 @@
     height: 50px;
     font-size: 25px;
     border-radius: 8px;
+    line-height: 50px;
   }
 
   .single_regin_title {

@@ -13,9 +13,9 @@ const config = {
     babel: {
       sourceMap: true,
       presets: [
-        'env', {
+        ['env', {
           modules: false
-        }
+        }]
       ],
       plugins: [
         'transform-class-properties',
@@ -29,7 +29,8 @@ const config = {
   copy: {
     patterns: [
       {
-        from: 'src/asset', to: `dist/${process.env.TARO_ENV}/asset`
+        from: 'src/asset', to: `dist/${process.env.TARO_ENV}/asset`,
+        from: 'src/asset', to: `dist/${process.env.TARO_ENV}/src/asset`
       }
     ],
     options: {}

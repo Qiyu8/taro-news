@@ -17,7 +17,7 @@ export default class Items extends Component {
                 </View>
                 <View className="three_item_imgs">
                     {
-                        this.props.imglist.map((item) => {
+                        this.props.imglist.map(item => {
                             return (
                                 <Block>
                                     <Image className="three_imgs" src={item.src}></Image>

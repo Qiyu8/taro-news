@@ -1,11 +1,11 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View, Text, Image, Block } from '@tarojs/components'
+import { View, Text, Image } from '@tarojs/components'
 import search from '../../asset/c_search_search/search.png'
 import './c_search_bar.scss'
 
 export default class SearchBar extends Component {
     static defaultProps = {
-        placeholder: '搜索栏组件默认字符'，
+        placeholder: '搜索栏组件默认字符',
         url: ''
     }
 

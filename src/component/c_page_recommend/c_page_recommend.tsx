@@ -100,10 +100,10 @@ export default class Recommend extends Component {
                         <Image className="image" src={image.imgsrc} onClick={this.showImageNews.bind(this, 'image')}></Image>
                     </SwiperItem>
                     <SwiperItem className="recommend_stack">
-                        <Image className="image" src={image.imgsrc} onClick={this.showImageNews.bind(this, 'text')}></Image>
+                        <Image className="image" src={text.imgsrc} onClick={this.showImageNews.bind(this, 'text')}></Image>
                     </SwiperItem>
                     <SwiperItem className="recommend_stack">
-                        <Image className="image" src={image.imgsrc} onClick={this.showImageNews.bind(this, 'video')}></Image>
+                        <Image className="image" src={video.imgsrc} onClick={this.showImageNews.bind(this, 'video')}></Image>
                     </SwiperItem>
                 </Swiper>
                 <View className="line"></View>

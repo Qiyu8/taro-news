@@ -16,7 +16,7 @@
     border-bottom-width: 0.5px;
     padding-top: 24.5px;
     padding-bottom: 24px;
-    border: 1px solid #CDCDCD;
+    border-bottom: 1px solid #CDCDCD;
   }
 
   .news_single_content {
@@ -24,7 +24,8 @@
   }
 
   .news_single_title {
-    width: 434px;
+    display: flex;
+    width: 420px;
     flex-direction: column;
     margin-right: 33.3px;
     justify-content: space-between;
@@ -38,12 +39,14 @@
   .foot {
     width: 434px;
     padding-top: 30px;
-    /* margin-top: 16.7px; */
   }
 
   .news_single_img {
+    display: flex;
     width: 222px;
     height: 148px;
+    align-items: center;
+    justify-content: center;
     float: right;
   }
 

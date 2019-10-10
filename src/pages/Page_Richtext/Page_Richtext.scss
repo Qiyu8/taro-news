@@ -38,6 +38,11 @@
     margin-bottom: 16px;
   }
 
+  .image {
+    width: 60px;
+    height: 60px;
+  }
+
   .single_item_recommend_text {
     color: #8c8c8c;
     font-size: 27.1px;
@@ -109,6 +114,7 @@
     align-items: center;
     margin-left: 72px;
     border-radius: 8px;
+    box-sizing: border-box;
   }
 
   .zan_img {
@@ -129,7 +135,6 @@
   }
 
   .zan_text {
-    width: 570px;
     line-height: 35px;
     font-size: 30px;
     color: #000000;

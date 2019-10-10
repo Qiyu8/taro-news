@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: flex-start;
     background-color: #FFFFFF;
+    height: 100%;
   }
 
   .swiper_tab {
@@ -18,12 +19,6 @@
     font-size: 100px;
   }
 
-  .bg_div {
-    background-color: #007DFF;
-    width: 120px;
-    height: 4px;
-  }
-
   .item_bg {
     width: 100px;
     height: 4px;
@@ -33,12 +28,8 @@
   .item_bg_active {
     width: 100px;
     height: 4px;
-    background-color: #007DFF;
+    background-color: rgb(243, 173, 138);
 
-  }
-
-  .div_tabcontent {
-    width: 684px;
   }
 
   .tab-bar {

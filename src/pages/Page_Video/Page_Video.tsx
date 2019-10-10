@@ -20,6 +20,7 @@ export default class Page_Video extends Component {
             count: "1.3万次播放",
             recommend: "推荐观看",
             videoIndex: 0,
+            videoContext: null,
             videoSource: "https://ss0.bdstatic.com/-0U0bnSm1A5BphGlnYG/cae-legoup-video-target/93be3d88-9fc2-4fbd-bd14-833bca731ca7.mp4",
             poster: "../../asset/to_delete/Bitmap.png",
             news: [
@@ -41,6 +42,7 @@ export default class Page_Video extends Component {
 
     start = () => {
         console.log('开始播放')
+        videoContext.play();
         Taro.showToast({
             title: '开始播放',
             icon: 'success',
@@ -163,13 +165,20 @@ export default class Page_Video extends Component {
 
     clickToPlay(index) {
         const curNew = this.state.news[index]
+        this.setState({
+            url: curNew.directUrl,
+            videoSource: curNew.url,
+            poster: curNew.poster,
+            videoIndex: index,
+            autoPlay: true
+        })
         Taro.navigateTo({
             url: `${curNew.directUrl}?videoSource=${curNew.url}&poster=${curNew.poster}&videoIndex=${index}&autoPlay=true`
         })
     }
 
     render() {
-        const { autoPlay, headTitle, source, TimeRanges, count, recommend, videoSource, poster, news} = this.state
+        const { autoPlay, headTitle, time, source, count, recommend, videoSource, poster, news} = this.state
         return(
             <View className="video_container">
                 <View className="video_play">

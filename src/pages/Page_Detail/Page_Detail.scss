@@ -28,12 +28,12 @@
     font-size: 50px;
   }
 
-  .sencond_title {
+  .second_title {
     width: 684px;
     margin-top: 16.7px;
   }
 
-  .sencond_title_text {
+  .second_title_text {
     font-size: 27.1px;
     color: #8c8c8c;
     margin-right: 20px;
@@ -162,6 +162,7 @@
     align-items: center;
     margin-left: 72px;
     border-radius: 8px;
+    box-sizing: border-box;
   }
 
   .zan_img {
@@ -174,6 +175,8 @@
     color: #BCBCBC;
     font-size: 20px;
     margin-right: 17px;
+    height: 54px;
+    line-height: 54px;
   }
 
   .zan_text_div {
@@ -190,4 +193,5 @@
     border-bottom-color: #BCBCBC;
     border-bottom-width: 0.5px;
     margin-bottom: 20px;
+    border-bottom-style: solid;
   }

@@ -8,6 +8,7 @@ export default class Page_Richtext extends Component {
         this.state = {
             loading: true,
             simpleHtmlText: "",
+            recommendTitle: "热门评论",
             unZanImage: "../../asset/img/p_news_four_icon1.png",
             zanImage: "../../asset/img/p_news_four_icon2.png",
             recommendors: [
@@ -37,7 +38,15 @@ export default class Page_Richtext extends Component {
     getSimpleHtmlText() {
         this.setState({
             loading: false,
-            simpleHtmlText: `<div style='height:30px;line-height:30px;color:#1a1a1a;font-size:26px;'>华为PC的光荣与梦想</div><div ><p>之前是拼命给渠道推货，现在是渠道拼命找我要货。”负责华为 PC 产品销售的老姜虽然比以前忙了不少，但心里却乐开了花。</p></div><img src='../../asset/to_delete/news_richtext.jpg'></img><div ><p >MateBook X Pro 毫不意外地成了当下最好的笔记本电脑之一，自发布以来持续收割着用户和媒体的好评，最好的屏幕，最好的外放音效，一气呵成的指纹解锁，便携小巧的电源。</p></div>`
+            simpleHtmlText: 
+            `<div style='height:30px;line-height:30px;color:#1a1a1a;font-size:26px;'>华为PC的光荣与梦想</div>
+            <div>
+                <p>之前是拼命给渠道推货，现在是渠道拼命找我要货。”负责华为 PC 产品销售的老姜虽然比以前忙了不少，但心里却乐开了花。</p>
+            </div>
+            <img src='../../asset/to_delete/p_news_four_p3.png'></img>
+            <div>
+                <p>MateBook X Pro 毫不意外地成了当下最好的笔记本电脑之一，自发布以来持续收割着用户和媒体的好评，最好的屏幕，最好的外放音效，一气呵成的指纹解锁，便携小巧的电源。</p>
+            </div>`
         })
     }
 

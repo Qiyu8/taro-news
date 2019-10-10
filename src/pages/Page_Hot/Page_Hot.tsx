@@ -1,4 +1,4 @@
-import Taro, { Component, Config } from '@tarojs/taro'
+import Taro, { Component } from '@tarojs/taro'
 import { View, Text, Block, Image } from '@tarojs/components'
 import Single from '../../component/c_news_single/c_news_single'
 import './Page_Hot.scss'
@@ -9,7 +9,7 @@ export default class Page_Hot extends Component {
         this.state = {
             title: "一朵金丝皇菊的故事",
             content: "据中央广电总台国际在线报道，央广国际在线6月6日刊发评论文章指出，路透社5日援引知情人士报道，美国GDP增长大约3%。",
-            lableOne: "特朗普",
+            labelOne: "特朗普",
             labelTwo: "美朝关系",
             hot: "热点话题",
             head: "台风山竹",
@@ -36,7 +36,8 @@ export default class Page_Hot extends Component {
     }
 
     render() {
-        let {title, content, head, lableOne, labelTwo, hot, singleOnes, singleTwos, singleThrees} = this.state
+        let {title, content, head, labelOne, labelTwo,
+             hot, singleOnes, singleTwos, singleThrees} = this.state
         return (
             <View className="hot_container">
                 <View className="head_image">
@@ -51,7 +52,7 @@ export default class Page_Hot extends Component {
                         <Text className="middle_content_text">{content}</Text>
                     </View>
                     <View className="head_text_lable">
-                        <Text className="foot_lable">{lableOne}</Text>
+                        <Text className="foot_lable">{labelOne}</Text>
                         <Text className="foot_lable">{labelTwo}</Text>
                     </View>
                 </View>

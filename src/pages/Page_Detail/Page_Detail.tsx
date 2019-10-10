@@ -21,17 +21,17 @@ export default class Page_Detail extends Component {
             singles: [{
               url: "/pages/Page_Image/Page_Image",
               title: "全面屏笔电首款 5G商用芯片，华为MWC秀「肌肉」",
-              imgsrc: "./to_delete/p_news_four_p2.png",
+              imgsrc: "../../asset/to_delete/p_news_four_p2.png",
               footword: "一点咨询"
             }, {
               url: "/pages/Page_Composite/Page_Composite",
               title: "Mate 10 系列抢先上手：全面屏、AI、保时捷设计",
-              imgsrc: "./to_delete/p_news_four_p3.png",
+              imgsrc: "../../asset/to_delete/p_news_four_p3.png",
               footword: "网易"
             }, {
               url: "/pages/Page_Image/Page_Image",
               title: "二季度中国智能手机市场华为领跑，市场份额领先",
-              imgsrc: "./to_delete/p_news_four_p4.png",
+              imgsrc: "../../asset/to_delete/p_news_four_p4.png",
               footword: "新浪网"
             }],
             recommendors: [
@@ -47,9 +47,9 @@ export default class Page_Detail extends Component {
         var items = this.state.recommendors[index]
         var tempTotal
         if (!items.isPrased) {
-            tempTotal = parseInt(items.tatol) + 1
+            tempTotal = parseInt(items.total) + 1
         } else {
-            tempTotal = parseInt(items.tatol) - 1
+            tempTotal = parseInt(items.total) - 1
         }
         items.total = tempTotal.toString()
         items.isPrased = !items.isPrased
@@ -59,7 +59,9 @@ export default class Page_Detail extends Component {
     }
 
     render() {
-        const {recommendors, singles, zanImage, unZanImage, headTitle, secondTitle, secondTitleLast, paragramFirst, middleImage, paragramMiddle, source, recommend, recommendTitle} = this.title
+        const {recommendors, singles, zanImage, unZanImage,
+             headTitle, secondTitle, secondTitleLast, paragramFirst,
+              middleImage, paragramMiddle, source, recommend, recommendTitle} = this.state
         return (
             <View className="detail_contaioner">
                 <View className="main_content">
@@ -100,10 +102,10 @@ export default class Page_Detail extends Component {
                         </View>
                     </View>
                     {
-                        singles.map(($items, $idx) => {
+                        singles.map((item, index) => {
                             return (
                                 <Block>
-                                    <Single url ={$items.url} title={$items.title} imgsrc={$items.imgsrc} footword={$items.footword} nounderline={$idx != singles.length -1 ? '0': '1'}></Single>
+                                    <Single url ={item.url} title={item.title} imgsrc={item.imgsrc} footword={item.footword} nounderline={index != singles.length -1 ? '0': '1'}></Single>
                                 </Block>
                             )
                         })
@@ -114,27 +116,27 @@ export default class Page_Detail extends Component {
                     <Text className="recommend_text">{recommendTitle}</Text>
                     <View className="recommend_div">
                         {
-                            recommendors.map(($item, $idx) => {
+                            recommendors.map((item, index) => {
                                 return (
                                     <Block>
                                         <View className="recommend1">
                                             <View className="re_head">
-                                                <Image className="re_head_img" src={$item.touxing}></Image>
+                                                <Image className="re_head_img" src={item.touxing}></Image>
                                                 <View className="name_time">
-                                                    <Text className="name">{$item.name}</Text>
-                                                    <Text className="time">{$item.time}</Text>
+                                                    <Text className="name">{item.name}</Text>
+                                                    <Text className="time">{item.time}</Text>
                                                 </View>
-                                                <View className="zan" onClick={this.zanClick.bind(this, $idx)}>
-                                                    {!$item.isPrased &&<Image className="zan_img" src={unZanImage}></Image>}
-                                                    {$item.isPrased &&<Image className="zan_img" src={zanImage}></Image>}
-                                                    <Text className="zan_num">{$item.total}</Text>
+                                                <View className="zan" onClick={this.zanClick.bind(this, index)}>
+                                                    {!item.isPrased &&<Image className="zan_img" src={unZanImage}></Image>}
+                                                    {item.isPrased &&<Image className="zan_img" src={zanImage}></Image>}
+                                                    <Text className="zan_num">{item.total}</Text>
                                                 </View>
                                             </View>
 
                                             <View className="re_foot">
                                                 <View className="zan_text_div">
                                                     <View className="zan_text">
-                                                        <Text>{$item.Text}</Text>
+                                                        <Text>{item.Text}</Text>
                                                     </View>
                                                 </View>
                                             </View>
