@@ -24,23 +24,6 @@ class App extends Component {
         },
         debug: true
     }
-
-    componentDidMount() {
-
-    }
-
-    componentDidShow() {
-
-    }
-
-    componentDidHide() {
-
-    }
-
-    componentDidCatchError() {
-
-    }
-
     render () {
         return (
             <Page_Home />
